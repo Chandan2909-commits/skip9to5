@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trading Masterclass — Skip9to5</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="masterclass.css" />
+</head>
+<body>
+
+  <!-- COUNTDOWN BANNER -->
+  <div class="mc-countdown-bar">
+    <span class="mc-countdown-label">&#128197; Next Masterclass Starts In</span>
+    <div class="mc-countdown-timer">
+      <div class="mc-cd-unit"><span id="cdHours">24</span><small>Hours</small></div>
+      <div class="mc-cd-sep">:</div>
+      <div class="mc-cd-unit"><span id="cdMins">00</span><small>Mins</small></div>
+      <div class="mc-cd-sep">:</div>
+      <div class="mc-cd-unit"><span id="cdSecs">00</span><small>Secs</small></div>
+    </div>
+    <a href="payment.html" class="mc-cd-cta">Reserve Seat &#8594;</a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-island" id="navIsland">
+      <div class="logo">
+        <img src="skip.png" alt="Skip9to5 Logo" class="nav-logo-img" />
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#mentors">About Us</a></li>
+        <li><a href="#" class="active">Masterclass</a></li>
+        <li><a href="index.html#courses">Courses</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="index.html#testimonials">Success Stories</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="nav-actions"></div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="mc-hero">
+    <div class="mc-hero-grid"></div>
+    <div class="mc-hero-blob b1"></div>
+    <div class="mc-hero-blob b2"></div>
+    <div class="mc-hero-inner">
+      <span class="mc-eyebrow">&#127891; Skip9to5 Trading Masterclass</span>
+      <h1>Learn To Read Every Move.<br /><span class="mc-gold">Become The 1% Trader.</span></h1>
+      <p>Learn markets through structure, discipline, and real-time execution guided by experienced mentors inside live market conditions.</p>
+      <a href="masterclass-payment.html" class="mc-btn-primary">Reserve Your Seat &#8594;</a>
+    </div>
+    <!-- Stats bar -->
+    <div class="mc-stats-bar">
+      <div class="mc-stat"><strong>3</strong><span>Months</span></div>
+      <div class="mc-stat-div"></div>
+      <div class="mc-stat"><strong>12</strong><span>Weeks</span></div>
+      <div class="mc-stat-div"></div>
+      <div class="mc-stat"><strong>70+</strong><span>Topics</span></div>
+      <div class="mc-stat-div"></div>
+      <div class="mc-stat"><strong>100+</strong><span>Hours</span></div>
+    </div>
+  </section>
+
+  <!-- CURRICULUM -->
+  <section class="mc-curriculum">
+    <div class="mc-section-inner">
+      <div class="mc-section-head">
+        <h2>What You'll <span class="mc-gold">Learn</span></h2>
+        <p>A structured 3-month journey from market fundamentals to professional-level execution.</p>
+      </div>
+
+      <div class="mc-months">
+
+        <!-- MONTH 1 -->
+        <div class="mc-month">
+          <div class="mc-month-label">Month 1</div>
+          <h3 class="mc-month-title">Foundation &amp; Market Basics</h3>
+          <div class="mc-modules">
+            <div class="mc-module">
+              <div class="mc-module-header" onclick="toggleModule(this)">
+                <span>Investing &amp; Market Introduction</span>
+                <span class="mc-chevron">&#8250;</span>
+              </div>
+              <ul class="mc-module-body">
+                <li>Introduction to Stocks, Bonds, Forex, Crypto &amp; F&amp;O</li>
+                <li>Passive Investing strategies</li>
+                <li>Fundamental Analysis</li>
+                <li>Financial Ratio Analysis</li>
+              </ul>
+            </div>
+            <div class="mc-module">
+              <div class="mc-module-header" onclick="toggleModule(this)">
+                <span>Positional Trading &amp; Strategies</span>
+                <span class="mc-chevron">&#8250;</span>
+              </div>
+              <ul class="mc-module-body">
+                <li>Positional Trading with Trend-following</li>
+                <li>Timing bull &amp; bear market runs</li>
+                <li>Trading with Time cycles</li>
+                <li>Creating Portfolios on Small case</li>
+                <li>Daytrading with 5-EMA</li>
+                <li>IPO &amp; Grey Market Analysis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- MONTH 2 -->
+        <div class="mc-month">
+          <div class="mc-month-label">Month 2</div>
+          <h3 class="mc-month-title">Advanced Trading &amp; Market Structure</h3>
+          <div class="mc-modules">
+            <div class="mc-module">
+              <div class="mc-module-header" onclick="toggleModule(this)">
+                <span>Trade Locations &amp; Technical Analysis</span>
+                <span class="mc-chevron">&#8250;</span>
+              </div>
+              <ul class="mc-module-body">
+                <li>IPO Short Strategies</li>
+                <li>Momentum Switch Strategy</li>
+                <li>Range Trading</li>
+                <li>S&amp;R Practical Trading</li>
+                <li>Demand and Supply zone Setup</li>
+                <li>Intro to SMC — BoS, Choch</li>
+              </ul>
+            </div>
+            <div class="mc-module">
+              <div class="mc-module-header" onclick="toggleModule(this)">
+                <span>Futures, Options &amp; Derivatives</span>
+                <span class="mc-chevron">&#8250;</span>
+              </div>
+              <ul class="mc-module-body">
+                <li>Introduction to Derivatives</li>
+                <li>Futures Trading Concepts</li>
+                <li>Options Fundamentals — Calls, Puts, Strike Selection</li>
+                <li>Option Greeks &amp; Volatility</li>
+                <li>Option Strategies — Directional &amp; Non-directional</li>
+                <li>Institutional &amp; Data Analysis</li>
+                <li>Advanced Execution &amp; Risk Management</li>
+              </ul>
+            </div>
+            <div class="mc-module">
+              <div class="mc-module-header" onclick="toggleModule(this)">
+                <span>Market Structure Foundations</span>
+                <span class="mc-chevron">&#8250;</span>
+              </div>
+              <ul class="mc-module-body">
+                <li>Auction Market Theory</li>
+                <li>Rules of Price Behaviour</li>
+                <li>Liquidity (types, pools, and zones)</li>
+                <li>Price Inefficiency Theory</li>
+                <li>Market Profile (TPO, value area, POC)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- MONTH 3 -->
+        <div class="mc-month">
+          <div class="mc-month-label">Month 3</div>
+          <h3 class="mc-month-title">Professional Trading &amp; Funding</h3>
+          <div class="mc-modules">
+            <div class="mc-module">
+              <div class="mc-module-header" onclick="toggleModule(this)">
+                <span>Order Flow &amp; Institutional Activity</span>
+                <span class="mc-chevron">&#8250;</span>
+              </div>
+              <ul class="mc-module-body">
+                <li>Order Flow Analysis</li>
+                <li>Iceberg Orders</li>
+                <li>Understanding institutional trading patterns</li>
+                <li>Liquidity Engineering</li>
+                <li>Price Inducement</li>
+                <li>Liquidity Traps and Sweeps</li>
+              </ul>
+            </div>
+            <div class="mc-module">
+              <div class="mc-module-header" onclick="toggleModule(this)">
+                <span>Advanced Strategies &amp; FOREX</span>
+                <span class="mc-chevron">&#8250;</span>
+              </div>
+              <ul class="mc-module-body">
+                <li>Market Manipulations</li>
+                <li>Base Manipulations</li>
+                <li>Price Deliveries</li>
+                <li>Volume / Gap Imbalances</li>
+                <li>FOREX Trading Fundamentals</li>
+                <li>Currency Pairs &amp; Trading Sessions</li>
+                <li>VWAP Trading Strategies</li>
+              </ul>
+            </div>
+            <div class="mc-module">
+              <div class="mc-module-header" onclick="toggleModule(this)">
+                <span>Risk Management &amp; Funding</span>
+                <span class="mc-chevron">&#8250;</span>
+              </div>
+              <ul class="mc-module-body">
+                <li>Position sizing and lot sizes</li>
+                <li>Risk management in derivatives</li>
+                <li>Understanding market risk &amp; India VIX</li>
+                <li>VWAP sniper trading setup</li>
+                <li>Prop firms for forex</li>
+                <li>Skip9to5 prop firm funding</li>
+                <li>Hacking funded programs</li>
+                <li>Psychology for funded accounts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ONLINE vs OFFLINE -->
+  <section class="mc-modes">
+    <div class="mc-section-inner">
+      <div class="mc-section-head">
+        <h2>Choose Your <span class="mc-gold">Learning Mode</span></h2>
+        <p>Same curriculum, same mentors — pick what works for you.</p>
+      </div>
+      <div class="mc-modes-grid">
+        <div class="mc-mode-card">
+          <div class="mc-mode-icon">&#128187;</div>
+          <h3>Online Masterclass</h3>
+          <p>Learn from anywhere</p>
+          <ul>
+            <li>&#10003; Theory on Weekends, Trades on Weekdays</li>
+            <li>&#10003; Live sessions via Zoom / Google Meet</li>
+            <li>&#10003; Recorded replays available</li>
+            <li>&#10003; Community access &amp; doubt clearing</li>
+          </ul>
+        </div>
+        <div class="mc-mode-card mc-mode-featured">
+          <div class="mc-mode-badge">Most Popular</div>
+          <div class="mc-mode-icon">&#127979;</div>
+          <h3>Offline Masterclass</h3>
+          <p>Daily learning &amp; execution</p>
+          <ul>
+            <li>&#10003; Hands-on practice in live markets</li>
+            <li>&#10003; Face-to-face mentor interaction</li>
+            <li>&#10003; Networking opportunities</li>
+            <li>&#10003; Real trading floor experience</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="mc-cta">
+    <div class="mc-cta-inner">
+      <h2>Ready to Become a <span class="mc-gold">Professional Trader?</span></h2>
+      <p>Join thousands of traders who've transformed their journey with Skip9to5's structured masterclass.</p>
+      <div class="mc-cta-btns">
+        <a href="masterclass-payment.html" class="mc-btn-primary">Purchase Now &#8594;</a>
+        <a href="contact.html" class="mc-btn-outline">Talk to Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-col footer-col--address">
+        <div class="footer-logo">
+          <img src="skip.png" alt="Skip9to5 Logo" class="footer-logo-img" />
+        </div>
+        <h4>Corporate Address</h4>
+        <p>Finloop Tech Pvt Ltd<br />
+          13/470, VIN Nivas, Thottichal, Kuniyan,<br />
+          Taliparamba, Karivellur, Kannur,<br />
+          Kerala, 670521</p>
+        <p>9/483, Opposite Infopark &ndash; Smart City Short Road,<br />
+          Edachira, Kakkanad,<br />
+          Kochi, Kerala 682030</p>
+        <div class="footer-policies">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Shipping Policy</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+      <div class="footer-col footer-col--contact">
+        <h4>Contact Us</h4>
+        <p><span class="footer-icon">&#128222;</span> <a href="tel:+916235913844">+91 6235 913 844</a></p>
+        <p><span class="footer-icon">&#9993;</span> <a href="mailto:support@Skip9to5.in">support@Skip9to5.in</a></p>
+        <h4 style="margin-top:36px">Business Hours</h4>
+        <p class="footer-hours-sub">Our Customer Support is Available at the Following Hours</p>
+        <p>Mon-Fri: 9:00 AM &ndash; 6:00 PM IST<br />
+          Sat: 10:00 AM &ndash; 2:00 PM IST<br />
+          Sun: Closed</p>
+        <p class="footer-hours-note">We strive to respond to all email inquiries within 24 hours.</p>
+      </div>
+      <div class="footer-col footer-col--nav">
+        <a href="index.html" class="footer-nav-home">Home</a>
+        <a href="index.html#mentors">About Us</a>
+        <a href="#">Masterclass</a>
+        <a href="index.html#courses">Courses</a>
+        <a href="community.html">Community</a>
+        <a href="index.html#testimonials">Success Stories</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Skip9to5. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="#" class="fs-icon">&#128100;</a>
+        <a href="#" class="fs-icon">&#128247;</a>
+        <a href="#" class="fs-icon">in</a>
+        <a href="#" class="fs-icon">&#9654;</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="float-social">
+    <a href="#" class="float-yt">&#9654;</a>
+    <a href="#" class="float-wa">&#128172;</a>
+  </div>
+
+  <script>
+    // Countdown — 24 hours from first visit, persisted in localStorage
+    (function () {
+      const KEY = 'mc_countdown_end';
+      let end = parseInt(localStorage.getItem(KEY));
+      if (!end || end < Date.now()) {
+        end = Date.now() + 24 * 60 * 60 * 1000;
+        localStorage.setItem(KEY, end);
+      }
+      function tick() {
+        const diff = Math.max(0, end - Date.now());
+        const h = Math.floor(diff / 3600000);
+        const m = Math.floor((diff % 3600000) / 60000);
+        const s = Math.floor((diff % 60000) / 1000);
+        document.getElementById('cdHours').textContent = String(h).padStart(2, '0');
+        document.getElementById('cdMins').textContent  = String(m).padStart(2, '0');
+        document.getElementById('cdSecs').textContent  = String(s).padStart(2, '0');
+        if (diff > 0) requestAnimationFrame(tick);
+      }
+      tick();
+    })();
+    const navIsland = document.getElementById('navIsland');
+    const navHamburger = document.getElementById('navHamburger');
+    const navLinks = document.getElementById('navLinks');
+    window.addEventListener('scroll', () => {
+      navIsland.classList.toggle('scrolled', window.scrollY > 60);
+    });
+    navHamburger.addEventListener('click', () => {
+      navHamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+    document.addEventListener('click', (e) => {
+      if (!navIsland.contains(e.target)) {
+        navHamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+      }
+    });
+
+    // Accordion
+    function toggleModule(header) {
+      const body = header.nextElementSibling;
+      const chevron = header.querySelector('.mc-chevron');
+      const isOpen = body.classList.contains('open');
+      // close all in same month
+      header.closest('.mc-modules').querySelectorAll('.mc-module-body').forEach(b => b.classList.remove('open'));
+      header.closest('.mc-modules').querySelectorAll('.mc-chevron').forEach(c => c.classList.remove('rotated'));
+      if (!isOpen) {
+        body.classList.add('open');
+        chevron.classList.add('rotated');
+      }
+    }
+  </script>
+</body>
+</html>

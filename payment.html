@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Your Payment - Skip9to5</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar-island" id="navIsland">
+      <div class="logo">
+        <img src="skip.png" alt="Skip9to5 Logo" class="nav-logo-img" />
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#mentors">About Us</a></li>
+        <li><a href="masterclass.html">Masterclass</a></li>
+        <li><a href="index.html#courses">Courses</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="index.html#testimonials">Success Stories</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="nav-actions"></div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="payment-hero">
+    <div class="container">
+      <div class="payment-hero-content">
+        <h1>CHOOSE YOUR <span class="payment-highlight">TRADING PROGRAM</span></h1>
+        <p>Select the Skip9to5 trading program that matches your experience level and goals.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="payment-section">
+    <div class="container">
+      <div class="payment-grid">
+        <!-- Program Selection -->
+        <div class="order-summary">
+          <div class="summary-header">
+            <h2>Select Your Program</h2>
+            <div class="header-underline"></div>
+          </div>
+          <div class="summary-content">
+            <div class="program-option" data-program="course1">
+              <div class="program-header">
+                <h3>Course 1 - Trading Career Consultation</h3>
+                <div class="program-price">₹1,999 INR ($22 USD)</div>
+              </div>
+              <div class="program-details">
+                <p>2-Day Live 1-on-1 Consultation Program</p>
+                <ul>
+                  <li>Personalized trading career guidance</li>
+                  <li>Market introduction & fundamentals</li>
+                  <li>Trading platforms and setups</li>
+                  <li>Official completion certificate</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="program-option" data-program="course2">
+              <div class="program-header">
+                <h3>Course 2 - 14-Day Live Trading Workshop</h3>
+                <div class="program-price">₹6,999 INR ($78 USD)</div>
+              </div>
+              <div class="program-details">
+                <p>14-Day Intensive LIVE Workshop</p>
+                <ul>
+                  <li>14 days of live trading sessions</li>
+                  <li>Real-time market analysis</li>
+                  <li>Risk management frameworks</li>
+                  <li>Workshop completion certificate</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="program-option" data-program="course3">
+              <div class="program-header">
+                <h3>Course 3 - Professional Trading Mastery</h3>
+                <div class="program-price">₹24,999 INR ($278 USD)</div>
+              </div>
+              <div class="program-details">
+                <p>Complete Professional Trading Mentorship</p>
+                <ul>
+                  <li>Advanced market structure concepts</li>
+                  <li>Smart Money Concepts (SMC)</li>
+                  <li>Gold (XAUUSD) specialization</li>
+                  <li>Professional program certification</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment Details -->
+        <div class="payment-details">
+          <div class="details-header">
+            <h2>Enrollment Details</h2>
+            <div class="header-underline"></div>
+          </div>
+          <form id="paymentForm" class="payment-form">
+            <p class="required-note">* indicates required field</p>
+
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service *</label>
+              <input type="text" id="service" name="service" value="Trading Program" readonly>
+            </div>
+
+            <div class="form-group">
+              <label for="selectedProgram">Package *</label>
+              <input type="text" id="selectedProgram" name="selectedProgram" value="Please select a program above" readonly>
+            </div>
+
+            <div class="form-group">
+              <label for="amount">Program Fee *</label>
+              <input type="text" id="amount" name="amount" value="Select program first" readonly>
+            </div>
+
+            <div class="form-group">
+              <label>Select Payment Method *</label>
+              <div class="payment-methods">
+                <button type="button" class="payment-method-btn" data-method="gpay">
+                  <svg viewBox="0 0 512 512" width="24" height="24">
+                    <path fill="#5F6368"
+                      d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-119.103 0-216-96.897-216-216S136.897 40 256 40s216 96.897 216 216-96.897 216-216 216z" />
+                    <path fill="#4285F4"
+                      d="M256 152c-57.346 0-104 46.654-104 104s46.654 104 104 104c28.673 0 54.643-11.643 73.373-30.373l-29.373-29.373C287.357 312.357 272.357 320 256 320c-35.346 0-64-28.654-64-64s28.654-64 64-64c17.673 0 33.673 7.163 45.373 18.746l29.373-29.373C311.643 163.643 285.673 152 256 152z" />
+                  </svg>
+                  <span>GPay</span>
+                </button>
+                <button type="button" class="payment-method-btn" data-method="phonepe">
+                  <svg viewBox="0 0 24 24" width="24" height="24">
+                    <rect fill="#5F259F" width="24" height="24" rx="4" />
+                    <path fill="#FFFFFF" d="M12 6L8 10h3v8h2v-8h3l-4-4z" />
+                  </svg>
+                  <span>PhonePe</span>
+                </button>
+                <button type="button" class="payment-method-btn" data-method="upi">
+                  <svg viewBox="0 0 24 24" width="24" height="24">
+                    <circle fill="#FF6B35" cx="12" cy="12" r="12" />
+                    <path fill="#FFFFFF" d="M8 8h8v8H8z" />
+                  </svg>
+                  <span>UPI</span>
+                </button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Payment Modal -->
+  <div class="payment-modal" id="paymentModal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-body" id="modalBody">
+        <!-- Content will be dynamically inserted -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-col footer-col--address">
+        <div class="footer-logo">
+          <img src="skip.png" alt="Skip9to5 Logo" class="footer-logo-img" />
+        </div>
+        <h4>Corporate Address</h4>
+        <p>Finloop Tech Pvt Ltd<br />
+          13/470, VIN Nivas, Thottichal, Kuniyan,<br />
+          Taliparamba, Karivellur, Kannur,<br />
+          Kerala, 670521</p>
+        <p>9/483, Opposite Infopark &ndash; Smart City Short Road,<br />
+          Edachira, Kakkanad,<br />
+          Kochi, Kerala 682030</p>
+        <div class="footer-policies">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Shipping Policy</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+      <div class="footer-col footer-col--contact">
+        <h4>Contact Us</h4>
+        <p><span class="footer-icon">&#128222;</span> <a href="tel:+916235913844">+91 6235 913 844</a></p>
+        <p><span class="footer-icon">&#9993;</span> <a href="mailto:support@Skip9to5.in">support@Skip9to5.in</a></p>
+        <h4 style="margin-top:36px">Business Hours</h4>
+        <p class="footer-hours-sub">Our Customer Support is Available at the Following Hours</p>
+        <p>Mon-Fri: 9:00 AM &ndash; 6:00 PM IST<br />
+          Sat: 10:00 AM &ndash; 2:00 PM IST<br />
+          Sun: Closed</p>
+        <p class="footer-hours-note">We strive to respond to all email inquiries within 24 hours.</p>
+      </div>
+      <div class="footer-col footer-col--nav">
+        <a href="index.html" class="footer-nav-home">Home</a>
+        <a href="#">About Us</a>
+        <a href="forex-course.html">Masterclass</a>
+        <a href="index.html#courses">Courses</a>
+        <a href="community.html">Community</a>
+        <a href="#">Success Stories</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Skip9to5. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="#" class="fs-icon">&#128100;</a>
+        <a href="#" class="fs-icon">&#128247;</a>
+        <a href="#" class="fs-icon">in</a>
+        <a href="#" class="fs-icon">&#9654;</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="float-social">
+    <a href="#" class="float-yt">&#9654;</a>
+    <a href="#" class="float-wa">&#128172;</a>
+  </div>
+
+  <script>
+    const navIsland = document.getElementById('navIsland');
+    const navHamburger = document.getElementById('navHamburger');
+    const navLinks = document.getElementById('navLinks');
+    window.addEventListener('scroll', () => {
+      navIsland.classList.toggle('scrolled', window.scrollY > 60);
+    });
+    navHamburger.addEventListener('click', () => {
+      navHamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+    document.addEventListener('click', (e) => {
+      if (!navIsland.contains(e.target)) {
+        navHamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+      }
+    });
+  </script>
+  <script src="payment.js"></script>
+</body>
+
+</html>
