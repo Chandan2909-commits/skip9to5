@@ -138,120 +138,67 @@
   <section class="courses-section" id="courses">
     <div class="courses-inner">
       <div class="courses-header">
-        <h2 class="courses-title">Courses Created by <span class="courses-highlight">Industry Experts</span></h2>
-        <p class="courses-tagline">From charts to code — master the skills that actually pay.</p>
+        <h2 class="courses-title" data-animate="fade-up">Courses Created by <span class="courses-highlight">Industry Experts</span></h2>
+        <p class="courses-tagline" data-animate="fade-up" data-delay="150">From charts to code — master the skills that actually pay.</p>
       </div>
 
-      <!-- filter tabs -->
-      <div class="courses-tabs">
-        <button class="ctab ctab--active">All</button>
-        <button class="ctab">Trading</button>
-        <button class="ctab">Data Science &amp; Analytics</button>
-        <button class="ctab">AI &amp; ML</button>
-        <button class="ctab">Design</button>
-        <button class="ctab">Software Development</button>
-      </div>
-
-      <!-- card grid -->
-      <div class="courses-grid">
-
-        <div class="ccard" onclick="window.location='forex-course.html'">
-          <div class="ccard-img-wrap">
-            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=300&h=200&fit=crop&auto=format" alt="Forex Trading" />
+      <!-- Expanded Global Markets Card -->
+      <div class="gm-card" data-animate="zoom-in" data-delay="200">
+        <div class="gm-card-img">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=500&fit=crop&auto=format" alt="Global Markets Trading" />
+          <div class="gm-img-overlay">
+            <span class="gm-live-badge">&#128308; 100% Live</span>
           </div>
-          <div class="ccard-name">Forex &amp; Trading</div>
-          <a href="forex-course.html" class="ccard-buy-btn" onclick="event.stopPropagation()">Purchase Now</a>
         </div>
-
-        <a href="#" class="ccard">
-          <div class="ccard-img-wrap">
-            <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=300&h=200&fit=crop&auto=format" alt="Python" />
+        <div class="gm-card-content">
+          <div class="gm-card-top">
+            <span class="gm-tag">Global Markets Trading</span>
+            <h3 class="gm-title">Skip9to5 Trading Programs</h3>
+            <p class="gm-desc">Real mentorship, live interaction, and structured professional guidance. All programs are conducted completely LIVE — not prerecorded.</p>
           </div>
-          <div class="ccard-name">Python</div>
-          <div class="ccard-soon">Coming Soon</div>
-        </a>
 
-        <a href="#" class="ccard">
-          <div class="ccard-img-wrap">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop&auto=format" alt="Data Science" />
+          <div class="gm-courses">
+
+            <div class="gm-course">
+              <div class="gm-course-head">
+                <span class="gm-course-num">Course 1</span>
+                <span class="gm-course-price">₹1,999 <small>($22)</small></span>
+              </div>
+              <h4>Trading Career Consultation</h4>
+              <p>2-Day Live 1-on-1 consultation for complete beginners. Personalized career guidance, market fundamentals, platform setup, and a clear trading roadmap.</p>
+            </div>
+
+            <div class="gm-course-divider"></div>
+
+            <div class="gm-course">
+              <div class="gm-course-head">
+                <span class="gm-course-num">Course 2</span>
+                <span class="gm-course-price">₹6,999 <small>($78)</small></span>
+              </div>
+              <h4>14-Day Live Trading Workshop</h4>
+              <p>Intensive beginner-to-intermediate workshop. 14 days of live sessions with real-time market analysis, chart breakdowns, risk management, and Smart Money Concepts intro.</p>
+            </div>
+
+            <div class="gm-course-divider"></div>
+
+            <div class="gm-course">
+              <div class="gm-course-head">
+                <span class="gm-course-num">Course 3</span>
+                <span class="gm-course-price">₹24,999 <small>($278)</small></span>
+              </div>
+              <h4>Professional Trading Mastery</h4>
+              <p>Complete beginner-to-pro mentorship. Advanced market structure, SMC, Gold (XAUUSD) specialization, institutional trading, and professional-level execution systems.</p>
+            </div>
+
           </div>
-          <div class="ccard-name">Data Science</div>
-          <div class="ccard-soon">Coming Soon</div>
-        </a>
 
-        <a href="#" class="ccard">
-          <div class="ccard-img-wrap">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&h=200&fit=crop&auto=format" alt="Data Analytics" />
+          <div class="gm-card-actions">
+            <a href="payment.html" class="gm-btn-primary">Enroll Now &#8594;</a>
+            <a href="global-markets.html" class="gm-btn-outline">View Full Details</a>
           </div>
-          <div class="ccard-name">Data Analytics</div>
-          <div class="ccard-soon">Coming Soon</div>
-        </a>
-
-        <a href="#" class="ccard">
-          <div class="ccard-img-wrap">
-            <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=300&h=200&fit=crop&auto=format" alt="Gen AI" />
-          </div>
-          <div class="ccard-name">Gen AI</div>
-          <div class="ccard-soon">Coming Soon</div>
-        </a>
-
-        <a href="#" class="ccard">
-          <div class="ccard-img-wrap">
-            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=300&h=200&fit=crop&auto=format" alt="Web Development" />
-          </div>
-          <div class="ccard-name">Web Development<br/>MERN Stack</div>
-          <div class="ccard-soon">Coming Soon</div>
-        </a>
-
-        <a href="#" class="ccard">
-          <div class="ccard-img-wrap">
-            <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=300&h=200&fit=crop&auto=format" alt="Business Analytics" />
-          </div>
-          <div class="ccard-name">Business Analytics</div>
-          <div class="ccard-soon">Coming Soon</div>
-        </a>
-
-        <a href="#" class="ccard">
-          <div class="ccard-img-wrap">
-            <img src="https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?w=300&h=200&fit=crop&auto=format" alt="Power BI" />
-          </div>
-          <div class="ccard-name">Power BI</div>
-          <div class="ccard-soon">Coming Soon</div>
-        </a>
-
-        <a href="#" class="ccard">
-          <div class="ccard-img-wrap">
-            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=300&h=200&fit=crop&auto=format" alt="UI UX Designing" />
-          </div>
-          <div class="ccard-name">UI UX Designing</div>
-          <div class="ccard-soon">Coming Soon</div>
-        </a>
-
-        <a href="#" class="ccard">
-          <div class="ccard-img-wrap">
-            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=300&h=200&fit=crop&auto=format" alt="DSA" />
-          </div>
-          <div class="ccard-name">DSA</div>
-          <div class="ccard-soon">Coming Soon</div>
-        </a>
-
-        <a href="#" class="ccard">
-          <div class="ccard-img-wrap">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=300&h=200&fit=crop&auto=format" alt="DevOps & Cloud" />
-          </div>
-          <div class="ccard-name">DevOps &amp; Cloud</div>
-          <div class="ccard-soon">Coming Soon</div>
-        </a>
-
-        <a href="#" class="ccard">
-          <div class="ccard-img-wrap">
-            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=300&h=200&fit=crop&auto=format" alt="Cyber Security" />
-          </div>
-          <div class="ccard-name">Cyber Security</div>
-          <div class="ccard-soon">Coming Soon</div>
-        </a>
-
+        </div>
       </div>
+
     </div>
   </section>
 
@@ -302,23 +249,23 @@
     <div class="coin coin-right">&#9889;</div>
 
     <div class="struggle-inner">
-      <h2 class="struggle-title">Why Most Traders <span class="struggle-highlight">Struggle</span></h2>
-      <p class="struggle-sub">Skip9to5 is built to help traders move beyond these limitations</p>
+      <h2 class="struggle-title" data-animate="fade-up">Why Most Traders <span class="struggle-highlight">Struggle</span></h2>
+      <p class="struggle-sub" data-animate="fade-up" data-delay="150">Skip9to5 is built to help traders move beyond these limitations</p>
 
       <!-- Top 3 cards -->
       <div class="struggle-cards">
-        <div class="s-card">
+        <div class="s-card" data-animate="fade-up" data-delay="100">
           <div class="s-icon">&#128172;</div>
           <h3>Beginner Mistakes</h3>
           <p>Avoiding responsibility and risk ownership Without discipline and accountability, decisions become
             emotional and inconsistent.</p>
         </div>
-        <div class="s-card">
+        <div class="s-card" data-animate="fade-up" data-delay="250">
           <div class="s-icon">&#128200;</div>
           <h3>Lack of a System</h3>
           <p>Trading without a defined framework results in inconsistent decisions and no clear path for growth.</p>
         </div>
-        <div class="s-card">
+        <div class="s-card" data-animate="fade-up" data-delay="400">
           <div class="s-icon">&#9881;</div>
           <h3>Lack of Discipline</h3>
           <p>Emotional trading, overtrading, and breaking rules prevent long term consistency and capital protection.
@@ -328,15 +275,15 @@
 
       <!-- Stats row -->
       <div class="struggle-stats">
-        <div class="stat-card">
+        <div class="stat-card" data-animate="pop" data-delay="100">
           <div class="stat-num">30,000+</div>
           <div class="stat-label">Active students</div>
         </div>
-        <div class="stat-card">
+        <div class="stat-card" data-animate="pop" data-delay="250">
           <div class="stat-num">9+</div>
           <div class="stat-label">years of experience</div>
         </div>
-        <div class="stat-card">
+        <div class="stat-card" data-animate="pop" data-delay="400">
           <div class="stat-num">5,870+</div>
           <div class="stat-label">live sessions</div>
         </div>
@@ -466,10 +413,10 @@
 
   <!-- WHAT OUR STUDENTS SAY -->
   <section class="testimonials" id="testimonials">
-    <div class="testi-header">
+    <div class="testi-header" data-animate="fade-up">
       <h2>What Our<br /><span class="testi-highlight">Students Say</span></h2>
       <p>Real feedback from traders who transformed<br />their journey with Skip9to5</p>
-      <a href="#" class="btn-primary">Get Start Now</a>
+      <a href="masterclass.html" class="btn-primary">Get Started Now</a>
     </div>
 
     <!-- ROW 1 - scrolls left -->
@@ -746,10 +693,10 @@
   <!-- WHAT SETS Skip9to5 APART -->
   <section class="apart">
     <div class="apart-inner">
-      <h2 class="apart-title">What Sets <span class="apart-highlight">Skip9to5 Apart</span></h2>
-      <p class="apart-sub">Skip9to5 is built to help traders move beyond these limitations</p>
+      <h2 class="apart-title" data-animate="fade-up">What Sets <span class="apart-highlight">Skip9to5 Apart</span></h2>
+      <p class="apart-sub" data-animate="fade-up" data-delay="150">Skip9to5 is built to help traders move beyond these limitations</p>
 
-      <div class="apart-table">
+            <div class="apart-table" id="apartTable">
         <!-- Header -->
         <div class="at-row at-header">
           <div class="at-col at-col--feature"></div>
@@ -791,7 +738,7 @@
 
         <div class="at-row">
           <div class="at-col at-col--feature"><span class="at-dot"></span>Trading Ideas &amp; Watchlists (Equity,
-            F&amp;O, Forex)</div>
+            F&amp;O, Global Markets)</div>
           <div class="at-col at-col--other"><span class="at-dash">–</span></div>
           <div class="at-col at-col--haven"><span class="at-check">&#10003;</span></div>
         </div>
@@ -806,6 +753,37 @@
     </div>
   </section>
 
+  <script>
+    /* ── Apart table: staggered bidirectional row reveal ── */
+    (function () {
+      const STAGGER = 80; // ms between each row
+
+      const rowObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          const row = entry.target;
+          const idx = parseInt(row.dataset.rowIdx, 10);
+
+          if (entry.isIntersecting) {
+            setTimeout(() => row.classList.add('row-visible'), idx * STAGGER);
+          } else {
+            // instant reset so re-entry always re-animates
+            row.classList.remove('row-visible');
+            row.style.transitionDelay = '0ms';
+            // restore transition delay after reset
+            requestAnimationFrame(() => {
+              row.style.transitionDelay = '';
+            });
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('#apartTable .at-row').forEach((row, i) => {
+        row.dataset.rowIdx = i;
+        rowObserver.observe(row);
+      });
+    })();
+  </script>
+
   <!-- 12 WEEK PROGRAM -->
   <section class="program">
     <div class="program-bg-globe"></div>
@@ -815,8 +793,8 @@
     </div>
 
     <div class="program-inner">
-      <h2 class="program-title">12 – Week Comprehensive <span class="program-highlight">Program</span></h2>
-      <p class="program-sub">Learning progresses through a clear sequence from understanding market logic to
+      <h2 class="program-title" data-animate="fade-up">6 – Week Comprehensive <span class="program-highlight">Program</span></h2>
+      <p class="program-sub" data-animate="fade-up" data-delay="150">Learning progresses through a clear sequence from understanding market logic to
         observing<br />real conditions, making decisions, and reviewing outcomes.</p>
 
       <!-- TIMELINE -->
@@ -826,43 +804,48 @@
         <div class="tl-line">
           <div class="tl-line-fill" id="tlFill"></div>
           <div class="tl-dot tl-dot--green" style="top:0"></div>
-          <div class="tl-dot tl-dot--red" style="top:calc(50% - 8px)"></div>
+          <div class="tl-dot tl-dot--red" style="top:calc(33% - 8px)"></div>
+          <div class="tl-dot tl-dot--red" style="top:calc(66% - 8px)"></div>
           <div class="tl-dot tl-dot--red" style="top:calc(100% - 16px)"></div>
         </div>
 
-        <!-- MONTH 1 — right -->
+        <!-- WEEK 1–2 — right -->
         <div class="tl-card tl-card--right tl-card--m1" data-tl="0">
-          <div class="tl-month">MONTH 1</div>
+          <div class="tl-month">WEEK 1 – 2</div>
           <h3>Foundation &amp; Market Basics</h3>
-          <div class="tl-item"><span class="tl-week">Weeks<br />1–2</span><span class="tl-arrow">›</span><span>Investing
-              &amp; Market Introduction</span><span class="tl-chevron">›</span></div>
-          <div class="tl-item"><span class="tl-week">Weeks<br />2–4</span><span
-              class="tl-arrow">›</span><span>Positional Trading &amp; Strategies</span><span class="tl-chevron">›</span>
-          </div>
+          <div class="tl-item"><span class="tl-week">Days<br />1–7</span><span class="tl-arrow">›</span><span>Investing &amp; Market Introduction</span><span class="tl-chevron">›</span></div>
+          <div class="tl-item"><span class="tl-week">Days<br />8–14</span><span class="tl-arrow">›</span><span>Positional Trading &amp; Strategies</span><span class="tl-chevron">›</span></div>
         </div>
 
-        <!-- MONTH 2 — left -->
+        <!-- WEEK 3–4 — left -->
         <div class="tl-card tl-card--left tl-card--m2" data-tl="1">
-          <div class="tl-month">MONTH 2</div>
+          <div class="tl-month">WEEK 3 – 4</div>
           <h3>Advanced Trading &amp; Market Structure</h3>
-          <div class="tl-item"><span class="tl-week">Weeks<br />5–6</span><span class="tl-arrow">›</span><span>Trade
-              Locations &amp; Technical Analysis</span><span class="tl-chevron">›</span></div>
-          <div class="tl-item"><span class="tl-week">Weeks<br />7–8</span><span class="tl-arrow">›</span><span>Futures,
-              Options &amp; Derivatives</span><span class="tl-chevron">›</span></div>
-          <div class="tl-item"><span class="tl-week">Week<br />9</span><span class="tl-arrow">›</span><span>Market
-              Structure Foundations</span><span class="tl-chevron">›</span></div>
+          <div class="tl-item"><span class="tl-week">Days<br />15–21</span><span class="tl-arrow">›</span><span>Trade Locations &amp; Technical Analysis</span><span class="tl-chevron">›</span></div>
+          <div class="tl-item"><span class="tl-week">Days<br />22–28</span><span class="tl-arrow">›</span><span>Futures, Options &amp; Derivatives</span><span class="tl-chevron">›</span></div>
+          <div class="tl-item"><span class="tl-week">Days<br />29–35</span><span class="tl-arrow">›</span><span>Market Structure Foundations</span><span class="tl-chevron">›</span></div>
         </div>
 
-        <!-- MONTH 3 — right -->
+        <!-- WEEK 5–6 — right -->
         <div class="tl-card tl-card--right tl-card--m3" data-tl="2">
-          <div class="tl-month">MONTH 3</div>
+          <div class="tl-month">WEEK 5 – 6</div>
           <h3>Professional Trading &amp; Funding</h3>
-          <div class="tl-item"><span class="tl-week">Week<br />10</span><span class="tl-arrow">›</span><span>Order Flow
-              &amp; Institutional Activity</span><span class="tl-chevron">›</span></div>
-          <div class="tl-item"><span class="tl-week">Week<br />11</span><span class="tl-arrow">›</span><span>Advanced
-              Strategies &amp; FOREX</span><span class="tl-chevron">›</span></div>
-          <div class="tl-item"><span class="tl-week">Week<br />12</span><span class="tl-arrow">›</span><span>Risk
-              Management &amp; Funding</span><span class="tl-chevron">›</span></div>
+          <div class="tl-item"><span class="tl-week">Days<br />36–38</span><span class="tl-arrow">›</span><span>Order Flow &amp; Institutional Activity</span><span class="tl-chevron">›</span></div>
+          <div class="tl-item"><span class="tl-week">Days<br />39–41</span><span class="tl-arrow">›</span><span>Advanced Strategies &amp; Global Markets</span><span class="tl-chevron">›</span></div>
+          <div class="tl-item"><span class="tl-week">Days<br />42–44</span><span class="tl-arrow">›</span><span>Risk Management &amp; Funding</span><span class="tl-chevron">›</span></div>
+        </div>
+
+        <!-- DAY 45 — left (special) -->
+        <div class="tl-card tl-card--left tl-card--m4 tl-card--special" data-tl="3">
+          <div class="tl-month tl-month--gold">DAY 45</div>
+          <h3>&#127775; Live Session — 14 Industry Experts</h3>
+          <p class="tl-special-desc">A grand live session featuring <strong>14 industry experts</strong> — traders, analysts, and market professionals — sharing real insights, live trades, and career-defining advice directly with students.</p>
+          <div class="tl-special-tags">
+            <span>Live Trading</span>
+            <span>Q&amp;A Panel</span>
+            <span>14 Experts</span>
+            <span>Certification</span>
+          </div>
         </div>
 
       </div>
@@ -895,7 +878,7 @@
 
   <!-- DOWNLOAD BROCHURE -->
   <section class="brochure">
-    <div class="brochure-card">
+    <div class="brochure-card" data-animate="zoom-in">
       <div class="brochure-text">
         <h2>Download<br /><span class="brochure-highlight">Program Brochure</span></h2>
         <p>Get a clear overview of the masterclass structure,<br />learning approach, and outcomes.</p>
@@ -904,106 +887,7 @@
     </div>
   </section>
 
-  <!-- DESIGNED FOR THE RIGHT KIND OF TRADER -->
-  <section class="trader-type">
-    <div class="tt-inner">
-      <h2 class="tt-title">Designed for the Right<br /><span class="tt-highlight">Kind of Trader</span></h2>
-      <p class="tt-sub">For individuals seeking structure, discipline,<br />and long-term clarity in
-        their<br />financial journey.</p>
 
-      <!-- SLIDER -->
-      <div class="tt-slider">
-        <div class="tt-track" id="ttTrack">
-
-          <div class="tt-card">
-            <div class="tt-card-text">
-              <h3>Long-Term Thinkers</h3>
-              <p>Beyond isolated trades. For those seeking a meaningful trading journey. Built with long-term direction
-                in mind. Focused on sustainability over short-term wins. Designed to evolve with experience. Created for
-                lasting progress in markets.</p>
-              <a href="#" class="tt-btn">Featured Courses</a>
-            </div>
-            <div class="tt-card-img">
-              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&q=80"
-                alt="Long-Term Thinkers" />
-            </div>
-          </div>
-
-          <div class="tt-card">
-            <div class="tt-card-text">
-              <h3>Beginner Traders</h3>
-              <p>Starting from scratch? No problem. Our structured curriculum takes you from zero to confident.
-                Step-by-step guidance, live sessions, and a supportive community ensure you never feel lost on your
-                journey.</p>
-              <a href="#" class="tt-btn">Featured Courses</a>
-            </div>
-            <div class="tt-card-img">
-              <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=500&q=80"
-                alt="Beginner Traders" />
-            </div>
-          </div>
-
-          <div class="tt-card">
-            <div class="tt-card-text">
-              <h3>Working Professionals</h3>
-              <p>Balance your career and trading. Learn at your own pace with recorded sessions and weekend live
-                classes. Build a secondary income stream without quitting your job. Practical strategies for busy
-                schedules.</p>
-              <a href="#" class="tt-btn">Featured Courses</a>
-            </div>
-            <div class="tt-card-img">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80"
-                alt="Working Professionals" />
-            </div>
-          </div>
-
-          <div class="tt-card">
-            <div class="tt-card-text">
-              <h3>Experienced Traders</h3>
-              <p>Already trading but not consistently profitable? Upgrade your edge with Smart Money Concepts, Order
-                Flow, and advanced risk management. Break through plateaus and achieve the consistency you've been
-                chasing.</p>
-              <a href="#" class="tt-btn">Featured Courses</a>
-            </div>
-            <div class="tt-card-img">
-              <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&q=80"
-                alt="Experienced Traders" />
-            </div>
-          </div>
-
-          <div class="tt-card">
-            <div class="tt-card-text">
-              <h3>Full-Time Aspirants</h3>
-              <p>Dream of trading full time? We provide the roadmap — from skill building to funded accounts. Learn how
-                to manage capital, control emotions, and build a sustainable trading career with real mentorship.</p>
-              <a href="#" class="tt-btn">Featured Courses</a>
-            </div>
-            <div class="tt-card-img">
-              <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=500&q=80"
-                alt="Full-Time Aspirants" />
-            </div>
-          </div>
-
-          <div class="tt-card">
-            <div class="tt-card-text">
-              <h3>Community Builders</h3>
-              <p>Trading is better together. Join a thriving community of 30,000+ traders. Share ideas, get feedback,
-                attend meetups, and grow alongside like-minded individuals who are all on the same mission.</p>
-              <a href="#" class="tt-btn">Featured Courses</a>
-            </div>
-            <div class="tt-card-img">
-              <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=500&q=80"
-                alt="Community Builders" />
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- DOTS -->
-      <div class="tt-dots" id="ttDots"></div>
-    </div>
-  </section>
 
   <script>
     /* Dynamic Island Navbar */
@@ -1025,143 +909,66 @@
     });
   </script>
 
-  <script> = document.getElementById('ttTrack');
-    const dotsWrap = document.getElementById('ttDots');
-    const cards = track.querySelectorAll('.tt-card');
-    let current = 0;
-    let autoTimer;
-
-    // build dots
-    cards.forEach((_, i) => {
-      const d = document.createElement('span');
-      d.className = 'tt-dot' + (i === 0 ? ' tt-dot--active' : '');
-      d.addEventListener('click', () => goTo(i));
-      dotsWrap.appendChild(d);
-    });
-
-    function goTo(idx) {
-      current = idx;
-      track.style.transform = `translateX(-${idx * 100}%)`;
-      dotsWrap.querySelectorAll('.tt-dot').forEach((d, i) =>
-        d.classList.toggle('tt-dot--active', i === idx)
-      );
-    }
-
-    function next() { goTo((current + 1) % cards.length); }
-
-    function startAuto() { autoTimer = setInterval(next, 4000); }
-    function stopAuto() { clearInterval(autoTimer); }
-
-    track.parentElement.addEventListener('mouseenter', stopAuto);
-    track.parentElement.addEventListener('mouseleave', startAuto);
-    startAuto();
-  </script>
-
   <!-- MEET THE MENTORS -->
   <section class="mentors" id="mentors">
     <div class="mentors-inner">
-      <h2 class="mentors-title">Meet the <span class="mentors-highlight">Mentors</span></h2>
-      <p class="mentors-sub">Real feedback from traders who transformed their<br />journey with Skip9to5</p>
+      <h2 class="mentors-title" data-animate="fade-up">Meet the <span class="mentors-highlight">Mentors</span></h2>
+      <p class="mentors-sub" data-animate="fade-up" data-delay="150">Real feedback from traders who transformed their<br />journey with Skip9to5</p>
 
-      <div class="mentors-grid">
+      <div class="mentors-list">
 
-        <div class="mentor-card" style="animation-delay:0.1s">
-          <div class="mentor-img">
+        <div class="mentor-item" data-animate="fade-right" style="animation-delay:0.1s">
+          <div class="mentor-item-img">
             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Ritvik Vipin" />
           </div>
-          <div class="mentor-info">
-            <div class="mentor-row1">
-              <span class="mentor-name">RITVIK VIPIN</span>
-              <span class="mentor-role">CO-FOUNDER</span>
+          <div class="mentor-item-content">
+            <div class="mentor-item-header">
+              <h3 class="mentor-item-name">RITVIK VIPIN</h3>
+              <span class="mentor-item-role">CO-FOUNDER</span>
             </div>
-            <div class="mentor-trade">Options Trader</div>
-            <div class="mentor-row2">
-              <span class="mentor-exp">9 year experience</span>
-              <a href="#" class="mentor-ig">&#128247;</a>
+            <p class="mentor-item-trade">Options Trader</p>
+            <p class="mentor-item-desc">With 9 years of trading experience, Ritvik specializes in options trading strategies and has mentored hundreds of traders to profitability.</p>
+            <div class="mentor-item-meta">
+              <span class="mentor-item-exp">9 year experience</span>
+              
             </div>
           </div>
         </div>
 
-        <div class="mentor-card" style="animation-delay:0.25s">
-          <div class="mentor-img">
+        <div class="mentor-item" data-animate="fade-left" style="animation-delay:0.25s">
+          <div class="mentor-item-img">
             <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80" alt="Christophal" />
           </div>
-          <div class="mentor-info">
-            <div class="mentor-row1">
-              <span class="mentor-name">CHRISTOPHAL</span>
-              <span class="mentor-role">CO-FOUNDER</span>
+          <div class="mentor-item-content">
+            <div class="mentor-item-header">
+              <h3 class="mentor-item-name">CHRISTOPHAL</h3>
+              <span class="mentor-item-role">CO-FOUNDER</span>
             </div>
-            <div class="mentor-trade">Options Trader</div>
-            <div class="mentor-row2">
-              <span class="mentor-exp">6 year experience</span>
-              <a href="#" class="mentor-ig">&#128247;</a>
+            <p class="mentor-item-trade">Options Trader</p>
+            <p class="mentor-item-desc">Christophal brings 6 years of market expertise and a unique approach to risk management and position sizing strategies.</p>
+            <div class="mentor-item-meta">
+              <span class="mentor-item-exp">6 year experience</span>
+            
             </div>
           </div>
         </div>
 
-        <div class="mentor-card" style="animation-delay:0.4s">
-          <div class="mentor-img">
+        <div class="mentor-item" data-animate="fade-right" style="animation-delay:0.4s">
+          <div class="mentor-item-img">
             <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80" alt="Akash Jayan" />
           </div>
-          <div class="mentor-info">
-            <div class="mentor-row1">
-              <span class="mentor-name">AKASH JAYAN</span>
-              <span class="mentor-role">CO-FOUNDER</span>
+          <div class="mentor-item-content">
+            <div class="mentor-item-header">
+              <h3 class="mentor-item-name">AKASH JAYAN</h3>
+              <span class="mentor-item-role">CO-FOUNDER</span>
             </div>
-            <div class="mentor-trade">Equity Trader</div>
-            <div class="mentor-row2">
-              <span class="mentor-exp">9 year experience</span>
-              <a href="#" class="mentor-ig">&#128247;</a>
+            <p class="mentor-item-trade">Equity Trader</p>
+            <p class="mentor-item-desc">Akash's 9 years in equity trading combined with his deep market structure knowledge makes him an invaluable guide for aspiring traders.</p>
+            <div class="mentor-item-meta">
+              <span class="mentor-item-exp">9 year experience</span>
+              
             </div>
           </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CHOOSE YOUR PATH -->
-  <section class="pricing">
-    <div class="pricing-rays"></div>
-    <div class="pricing-inner">
-      <h2 class="pricing-title">Choose Your Path To <span class="pricing-highlight">Trading Mastery</span></h2>
-      <p class="pricing-sub">Flexible plans designed to fit your learning goals from core concepts to
-        live<br />mentorship and personalized guidance.</p>
-
-      <div class="pricing-grid">
-
-        <!-- Card 1 -->
-        <div class="price-card" style="animation-delay:0.1s">
-          <div class="price-tag">Live Online Masterclass</div>
-          <p class="price-desc">Learn from anywhere with real-time interaction</p>
-          <hr class="price-divider" />
-          <ul class="price-features">
-            <li><span class="pf-check">&#10003;</span> Live interactive sessions with Q&amp;A</li>
-            <li><span class="pf-check">&#10003;</span> Recorded sessions for replay</li>
-            <li><span class="pf-check">&#10003;</span> Live Trade Rooms with Mentors</li>
-            <li><span class="pf-check">&#10003;</span> Funding Exams from $10k to $100k</li>
-            <li><span class="pf-check">&#10003;</span> Trade with a community of 10k+ traders</li>
-            <li><span class="pf-check">&#10003;</span> Wealth Management and Algo bots</li>
-          </ul>
-          <a href="#" class="price-btn">Enroll Now</a>
-          <p class="price-note">No credit card required</p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="price-card" style="animation-delay:0.25s">
-          <div class="price-tag">In-Person Masterclass</div>
-          <p class="price-desc">Learn &amp; trade with us from our Kochi office for a month.</p>
-          <hr class="price-divider" />
-          <ul class="price-features">
-            <li><span class="pf-check">&#10003;</span> Face-to-face interaction with mentors</li>
-            <li><span class="pf-check">&#10003;</span> Networking with fellow traders</li>
-            <li><span class="pf-check">&#10003;</span> Trade across all markets</li>
-            <li><span class="pf-check">&#10003;</span> Hands-on trading in markets</li>
-            <li><span class="pf-check">&#10003;</span> Physical workbooks and materials</li>
-            <li><span class="pf-check">&#10003;</span> Certificate of completion</li>
-          </ul>
-          <a href="#" class="price-btn">Enroll Now</a>
-          <p class="price-note">No credit card required</p>
         </div>
 
       </div>
@@ -1171,26 +978,26 @@
   <!-- WHY Skip9to5 -->
   <section class="why-ha">
     <div class="why-ha-inner">
-      <h2 class="why-ha-title">Why <span class="why-ha-highlight">Skip9to5</span></h2>
-      <p class="why-ha-sub">A comprehensive approach to trading education<br />designed for serious learners</p>
+      <h2 class="why-ha-title" data-animate="fade-up">Why <span class="why-ha-highlight">Skip9to5</span></h2>
+      <p class="why-ha-sub" data-animate="fade-up" data-delay="150">A comprehensive approach to trading education<br />designed for serious learners</p>
 
       <div class="why-ha-grid">
-        <div class="why-card" style="animation-delay:0.1s">
+        <div class="why-card" data-animate="pop" data-delay="100" style="animation-delay:0.1s">
           <div class="why-icon">&#9201;</div>
           <h3>24/7 Support</h3>
           <p>Round-the-clock assistance whenever you need</p>
         </div>
-        <div class="why-card" style="animation-delay:0.22s">
+        <div class="why-card" data-animate="pop" data-delay="200" style="animation-delay:0.22s">
           <div class="why-icon">&#127758;</div>
           <h3>Global Access</h3>
           <p>Learn from anywhere in the world</p>
         </div>
-        <div class="why-card" style="animation-delay:0.34s">
+        <div class="why-card" data-animate="pop" data-delay="300" style="animation-delay:0.34s">
           <div class="why-icon">&#127942;</div>
           <h3>Certification</h3>
           <p>Industry-recognized trading certification</p>
         </div>
-        <div class="why-card" style="animation-delay:0.46s">
+        <div class="why-card" data-animate="pop" data-delay="400" style="animation-delay:0.46s">
           <div class="why-icon">&#128257;</div>
           <h3>Lifetime Access</h3>
           <p>One-time payment, lifetime benefits</p>
@@ -1269,7 +1076,7 @@
       <div class="footer-col footer-col--nav">
         <a href="index.html" class="footer-nav-home">Home</a>
         <a href="#">About Us</a>
-        <a href="forex-course.html">Masterclass</a>
+        <a href="global-markets.html">Masterclass</a>
         <a href="index.html#courses">Courses</a>
         <a href="community.html">Community</a>
         <a href="#">Success Stories</a>
@@ -1296,6 +1103,7 @@
     <a href="#" class="float-wa">&#128172;</a>
   </div>
 
+  <script src="animate.js"></script>
 </body>
 
 </html>

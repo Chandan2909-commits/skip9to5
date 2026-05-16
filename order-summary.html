@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Confirmed — Skip9to5</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="order-summary.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar-island" id="navIsland">
+      <div class="logo">
+        <img src="skip.png" alt="Skip9to5 Logo" class="nav-logo-img" />
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#mentors">About Us</a></li>
+        <li><a href="masterclass.html">Masterclass</a></li>
+        <li><a href="index.html#courses">Courses</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="index.html#testimonials">Success Stories</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="nav-actions"></div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="os-page">
+
+    <!-- Confetti canvas -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <div class="os-wrap">
+
+      <!-- Check icon -->
+      <div class="os-check" id="osCheck">
+        <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+          <circle cx="28" cy="28" r="28" fill="#d9a441"/>
+          <path d="M17 28L24 35L39 20" stroke="#000" stroke-width="3.5"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <h1 class="os-title">Order Confirmed!</h1>
+      <p class="os-sub">Your payment has been received. Here's a summary of your enrollment.</p>
+
+      <!-- Summary card -->
+      <div class="os-card">
+        <div class="os-card-header">
+          <span class="os-badge">&#127891; Enrollment Summary</span>
+          <span class="os-date" id="osDate"></span>
+        </div>
+
+        <div class="os-rows" id="osRows">
+          <!-- filled by JS -->
+        </div>
+
+        <div class="os-total-row">
+          <span>Amount Paid</span>
+          <span class="os-total-val" id="osAmount">—</span>
+        </div>
+      </div>
+
+      <!-- What happens next -->
+      <div class="os-next">
+        <h2>What Happens Next?</h2>
+        <div class="os-steps">
+          <div class="os-step">
+            <div class="os-step-num">1</div>
+            <div>
+              <strong>Confirmation Email</strong>
+              <p>You'll receive an enrollment confirmation on your registered email within 24 hours.</p>
+            </div>
+          </div>
+          <div class="os-step">
+            <div class="os-step-num">2</div>
+            <div>
+              <strong>Mentor Onboarding</strong>
+              <p>Our team will reach out to schedule your first session and share access details.</p>
+            </div>
+          </div>
+          <div class="os-step">
+            <div class="os-step-num">3</div>
+            <div>
+              <strong>Start Learning</strong>
+              <p>Join the community, attend live sessions, and begin your trading journey.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="os-actions">
+        <a href="index.html" class="os-btn-primary">Back to Home</a>
+        <a href="community.html" class="os-btn-outline">Join Community</a>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    // Navbar scroll
+    const navIsland = document.getElementById('navIsland');
+    const navHamburger = document.getElementById('navHamburger');
+    const navLinks = document.getElementById('navLinks');
+    window.addEventListener('scroll', () => navIsland.classList.toggle('scrolled', window.scrollY > 60));
+    navHamburger.addEventListener('click', () => {
+      navHamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+    document.addEventListener('click', (e) => {
+      if (!navIsland.contains(e.target)) {
+        navHamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+      }
+    });
+
+    // Load order data from sessionStorage
+    const raw = sessionStorage.getItem('skip9to5_order');
+    if (!raw) {
+      // No order data — redirect home
+      window.location.href = 'index.html';
+    } else {
+      const order = JSON.parse(raw);
+
+      // Date
+      document.getElementById('osDate').textContent = new Date().toLocaleDateString('en-IN', {
+        day: 'numeric', month: 'long', year: 'numeric'
+      });
+
+      // Amount
+      document.getElementById('osAmount').textContent = order.amount || '—';
+
+      // Build rows
+      const fields = [
+        { label: 'Full Name',       value: order.fullName },
+        { label: 'Email',           value: order.email },
+        { label: 'Phone',           value: order.phone },
+        { label: 'Service',         value: order.service },
+        { label: 'Package',         value: order.package },
+        { label: 'Payment Method',  value: order.paymentMethod ? order.paymentMethod.toUpperCase() : '—' },
+        { label: 'Transaction ID',  value: order.transactionId },
+      ];
+
+      const rowsEl = document.getElementById('osRows');
+      rowsEl.innerHTML = fields
+        .filter(f => f.value)
+        .map(f => `
+          <div class="os-row">
+            <span class="os-row-label">${f.label}</span>
+            <span class="os-row-value">${f.value}</span>
+          </div>
+        `).join('');
+
+      // Clear after reading so back-button doesn't re-show stale data
+      sessionStorage.removeItem('skip9to5_order');
+    }
+
+    // Confetti burst
+    (function () {
+      const canvas = document.getElementById('confettiCanvas');
+      const ctx = canvas.getContext('2d');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const colors = ['#d9a441', '#ffe8a3', '#ffffff', '#f0c040', '#fff5cc'];
+      const pieces = Array.from({ length: 120 }, () => ({
+        x: Math.random() * canvas.width,
+        y: Math.random() * -canvas.height,
+        w: Math.random() * 10 + 5,
+        h: Math.random() * 6 + 3,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        rot: Math.random() * 360,
+        vx: (Math.random() - 0.5) * 2,
+        vy: Math.random() * 3 + 2,
+        vr: (Math.random() - 0.5) * 4,
+        alpha: 1
+      }));
+
+      let frame = 0;
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        pieces.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.rot += p.vr;
+          if (frame > 80) p.alpha = Math.max(0, p.alpha - 0.012);
+          ctx.save();
+          ctx.globalAlpha = p.alpha;
+          ctx.translate(p.x, p.y);
+          ctx.rotate(p.rot * Math.PI / 180);
+          ctx.fillStyle = p.color;
+          ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+          ctx.restore();
+        });
+        frame++;
+        if (frame < 160) requestAnimationFrame(draw);
+        else ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+      draw();
+    })();
+  </script>
+
+</body>
+</html>

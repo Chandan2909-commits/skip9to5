@@ -1,4 +1,4 @@
-/* Forex Course Page — base variables and layout classes */
+/* Global Markets Course Page — base variables and layout classes */
 
 :root {
   --lime: #d9a441;
@@ -207,7 +207,7 @@
 /* program grid (what's included) */
 .program-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
 }
 .program-card {
@@ -386,7 +386,7 @@
   .section-shell { padding: 60px 20px; }
 }
 
-/* Forex Course Page — additional styles on top of base */
+/* Global Markets Course Page — additional styles on top of base */
 
 .fc-hero {
   min-height: 580px;
@@ -632,4 +632,119 @@
   .fc-hero { padding: 80px 20px 80px; }
   .fc-hero-meta { gap: 8px; }
   .fc-hero-meta span { font-size: 12px; padding: 6px 12px; }
+}
+
+/* LEARNING MODE SECTION */
+.gm-modes {
+  background: #000;
+  padding: 90px 0;
+}
+
+.gm-section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.gm-section-head {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.gm-section-head h2 {
+  font-size: 42px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -1.5px;
+  margin-bottom: 12px;
+}
+.gm-section-head p {
+  color: #7a8fa0;
+  font-size: 15px;
+}
+
+.gm-gold {
+  background: linear-gradient(90deg, #d9a441, #ffe8a3, #d9a441);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 4s linear infinite;
+}
+
+.gm-modes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.gm-mode-card {
+  background: #0d1117;
+  border: 1px solid #1e2230;
+  border-radius: 20px;
+  padding: 36px 32px;
+  position: relative;
+  transition: transform 0.3s, border-color 0.3s;
+}
+.gm-mode-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(217,164,65,0.35);
+}
+
+.gm-mode-featured {
+  border-color: rgba(217,164,65,0.4);
+  background: linear-gradient(135deg, #0d1117, #12100a);
+  box-shadow: 0 0 40px rgba(217,164,65,0.07);
+}
+
+.gm-mode-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #d9a441, #ffe8a3);
+  color: #000;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 16px;
+  border-radius: 20px;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+.gm-mode-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.gm-mode-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.gm-mode-card > p {
+  font-size: 13px;
+  color: #7a8fa0;
+  margin-bottom: 20px;
+}
+.gm-mode-card ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.gm-mode-card ul li {
+  font-size: 13.5px;
+  color: #8a9bb0;
+}
+.gm-mode-card ul li::first-letter { color: #d9a441; }
+
+@media (max-width: 768px) {
+  .gm-modes-grid { grid-template-columns: 1fr; }
+  .gm-section-inner { padding: 0 24px; }
+  .gm-section-head h2 { font-size: 30px; }
+  .gm-modes { padding: 60px 0; }
 }
