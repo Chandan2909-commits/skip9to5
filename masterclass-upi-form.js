@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('paymentModal').classList.remove('active');
     }
 
-    // Proceed button — validate then show UPI QR
+    // Proceed button — validate then show transaction ID form directly
     document.getElementById('proceedBtn').addEventListener('click', function () {
         const fullName = document.getElementById('fullName').value.trim();
         const email    = document.getElementById('email').value.trim();
@@ -23,47 +23,14 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        showUPIModal();
+        confirmPayment();
     });
 
-    function showUPIModal() {
+    function confirmPayment() {
         const modal     = document.getElementById('paymentModal');
         const modalBody = document.getElementById('modalBody');
 
-        modalBody.innerHTML = `
-            <h3 class="modal-title">UPI Payment</h3>
-            <div class="qr-container">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=skip9to5@upi%26pn=Skip9to5%26am=47%26cu=INR"
-                     alt="UPI QR Code" style="width:200px;height:200px;display:block;" />
-            </div>
-            <div class="upi-info">
-                <p class="upi-label">Or pay directly to UPI ID</p>
-                <div class="upi-id">
-                    <span id="upiIdText">skip9to5@upi</span>
-                    <button class="copy-btn" id="copyUpiBtn">&#128203; Copy</button>
-                </div>
-                <p class="scan-note">Amount: <strong style="color:#d9a441">&#8377;47 ($0.50)</strong> &nbsp;|&nbsp; Masterclass &mdash; Standard</p>
-            </div>
-            <div class="modal-footer">
-                <p class="modal-note">After completing payment, click the button below to confirm</p>
-                <button class="complete-payment-btn" id="completedBtn">I've Completed the Payment</button>
-            </div>
-        `;
-
         modal.classList.add('active');
-
-        document.getElementById('copyUpiBtn').addEventListener('click', function () {
-            navigator.clipboard.writeText('skip9to5@upi').then(() => {
-                this.textContent = '✓ Copied!';
-                setTimeout(() => this.textContent = '📋 Copy', 1500);
-            });
-        });
-
-        document.getElementById('completedBtn').addEventListener('click', confirmPayment);
-    }
-
-    function confirmPayment() {
-        const modalBody = document.getElementById('modalBody');
 
         modalBody.innerHTML = `
             <h3 class="modal-title">Enter Transaction Details</h3>
