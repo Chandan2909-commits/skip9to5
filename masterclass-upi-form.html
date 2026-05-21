@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Masterclass Payment - Skip9to5</title>
+  <title>Masterclass UPI Payment - Skip9to5</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -87,7 +87,7 @@
           </div>
         </div>
 
-        <!-- Payment Details -->
+        <!-- Enrollment Details -->
         <div class="payment-details" data-animate="fade-left" data-delay="200">
           <div class="details-header">
             <h2>Enrollment Details</h2>
@@ -128,11 +128,10 @@
 
             <div class="form-group">
               <label for="paymentMethod">Payment Method *</label>
-              <input type="text" id="paymentMethod" name="paymentMethod" value="Crypto" readonly>
+              <input type="text" id="paymentMethod" name="paymentMethod" value="UPI" readonly>
             </div>
 
-            <button type="button" class="confirm-payment-btn" id="proceedCryptoBtn">Proceed to Pay &#8594;</button>
-
+            <button type="button" class="confirm-payment-btn" id="proceedBtn">Proceed to Pay &#8594;</button>
           </form>
         </div>
       </div>
@@ -224,7 +223,7 @@
       }
     });
   </script>
-  <script src="masterclass-crypto-payment.js"></script>
+  <script src="masterclass-upi-form.js"></script>
   <script src="animate.js"></script>
 </body>
 
